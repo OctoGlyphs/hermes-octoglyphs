@@ -31,7 +31,13 @@ hermes plugins enable octoglyphs
 hermes
 ```
 
-`OctoGlyphs/hermes-octoglyphs` should be a generated release mirror of this folder. Keep source changes in the main OctoGlyphs monorepo, then publish this folder to the Hermes mirror when releasing. That gives Hermes users the standard install flow without creating a second hand-maintained codebase.
+`OctoGlyphs/hermes-octoglyphs` is a generated release mirror of this folder. Keep source changes in the main OctoGlyphs monorepo, then publish this folder to the Hermes mirror when releasing. That gives Hermes users the standard install flow without creating a second hand-maintained codebase.
+
+Please file issues and pull requests in the main repository:
+
+```text
+https://github.com/OctoGlyphs/OctoGlyphs
+```
 
 ## Local install for testing
 
