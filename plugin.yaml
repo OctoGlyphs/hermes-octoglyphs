@@ -1,0 +1,12 @@
+name: octoglyphs
+version: 0.1.0
+description: "Privacy-first OctoGlyphs companion tank for Hermes sessions. Emits metadata-only session, prompt, response, and tool events."
+author: "OctoGlyphs"
+hooks:
+    - on_session_start
+    - pre_llm_call
+    - post_tool_call
+    - post_llm_call
+    - on_session_end
+    - on_session_finalize
+    - on_session_reset

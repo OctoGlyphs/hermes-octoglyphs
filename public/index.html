@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OctoGlyphs</title>
+  <link rel="icon" type="image/jpeg" href="./octo-logo.jpg" />
+  <link rel="apple-touch-icon" href="./octo-logo.jpg" />
+  <script type="module" crossorigin src="./assets/index-BKpZ2AUE.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BD-mu48P.css">
+</head>
+<body>
+  <div id="app-viewport">
+    <div id="panel-root">
+    <header class="topbar">
+      <div>
+        <h1>OctoGlyphs</h1>
+        <p id="plugin-status-readout">Prompt Fed Octo Companion</p>
+      </div>
+      <div class="topbar-actions">
+        <button id="tank-hunt-button">Tank Hunt</button>
+        <button id="loadout-toggle">Loadout</button>
+        <button id="evolve-toggle">Evolve</button>
+        <button id="shop-toggle">Shop</button>
+        <button id="music-toggle" class="music-toggle" aria-label="Toggle music"><img src="./assets/raw/music/unmute.png" alt="" /><span>Music</span></button>
+      </div>
+    </header>
+
+    <main id="game-root"></main>
+
+    <aside id="shop-panel" class="trait-panel" aria-label="Evolution Shop">
+      <div class="trait-panel-shell">
+        <div class="shop-header">
+          <div>
+            <h2>Evolution Shop</h2>
+            <p id="inventory-readout">Unlocked 0/0</p>
+            <p id="shop-count-readout">0 shown</p>
+            <p class="shop-help">Discover traits in tank, buy them here, then tune builds in Loadout.</p>
+          </div>
+          <div class="panel-actions">
+            <button class="panel-close" data-close-panel="shop-panel">Close</button>
+          </div>
+        </div>
+        <div id="shop-category-tabs" class="shop-tabs"></div>
+        <div id="shop-filter-tabs" class="shop-tabs shop-filter-tabs"></div>
+        <div class="sort-section">
+          <span>Sort</span>
+          <div id="shop-sort-tabs" class="shop-tabs sort-tabs"></div>
+        </div>
+        <div id="shop-list" class="trait-list"></div>
+      </div>
+    </aside>
+
+    <aside id="loadout-panel" class="trait-panel" aria-label="Loadout">
+      <div class="trait-panel-shell">
+        <div class="shop-header">
+          <div>
+            <h2>Loadout</h2>
+            <p>Equip owned traits by slot.</p>
+            <p id="loadout-stats-readout">Current Speed 1.00x</p>
+          </div>
+          <div class="panel-actions">
+            <button class="panel-close" data-close-panel="loadout-panel">Close</button>
+          </div>
+        </div>
+        <div id="loadout-summary" class="loadout-summary"></div>
+        <div id="loadout-presets" class="loadout-presets"></div>
+        <div id="loadout-synergy-readout"></div>
+        <div id="loadout-slot-tabs" class="shop-tabs"></div>
+        <div class="sort-section">
+          <span>Sort</span>
+          <div id="loadout-sort-tabs" class="shop-tabs sort-tabs"></div>
+        </div>
+        <div id="loadout-list" class="trait-list"></div>
+      </div>
+    </aside>
+
+    <aside id="evolve-panel" class="trait-panel" aria-label="Trait Evolution">
+      <div class="trait-panel-shell">
+        <div class="shop-header">
+          <div>
+            <h2>Trait Evolution</h2>
+            <p>Sacrifice 3 same-rarity traits to create 1 of the next rarity.</p>
+            <p id="evolve-status-readout">Select a rarity to begin.</p>
+          </div>
+          <div class="panel-actions">
+            <button class="panel-close" data-close-panel="evolve-panel">Close</button>
+          </div>
+        </div>
+        <div id="evolve-rarity-tabs" class="shop-tabs"></div>
+        <div id="evolve-selection-readout" class="evolve-selection"></div>
+        <div id="evolve-list" class="trait-list"></div>
+        <div id="evolve-action" class="evolve-action-bar"></div>
+      </div>
+    </aside>
+
+    <div id="tank-hunt-hud-root"></div>
+
+    <footer class="hud">
+      <span id="wallet-readout">Gems 0</span>
+      <span id="mode-readout">Autopilot</span>
+      <span id="lifetime-readout">Prompts 0 · Tokens 0 · Traits 0</span>
+      <span id="loadout-readout">Blue + Regular</span>
+      <span id="stats-readout">Stats Speed 1.00x · Magnet 1.00x · Gem 1.00x</span>
+      <span id="notice-readout">Work generates gems. Rare traits require manual collection.</span>
+    </footer>
+    </div>
+  </div>
+</body>
+</html>
